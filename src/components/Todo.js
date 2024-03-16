@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4,v4 } from 'uuid';
 
-
+let index =0;
 export default function Todo() {
     const [todos,setTodos]=useState([
      
@@ -18,7 +18,7 @@ export default function Todo() {
         e.preventDefault();
         if (!newTodo.trim()) return; // If newTodo is empty or contains only whitespace, return
         const todo = {
-            id: v4(),
+            id: index++,
             title: newTodo,
             completed: false
         };
