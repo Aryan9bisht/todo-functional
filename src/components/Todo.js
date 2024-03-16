@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { v4 as uuidv4,v4 } from 'uuid';
 
 let index =0;
 export default function Todo() {
